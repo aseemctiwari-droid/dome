@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mechanical Engineering Department</title>
 
 <style>
@@ -9,34 +12,35 @@
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f4f8fc;
+    background:#eaf6ff;
 }
 
-.header-image{
+.banner{
     width:100%;
-    height:400px;
+    height:450px;
     object-fit:cover;
 }
 
-.title{
+.header{
     text-align:center;
+    background:#eaf6ff;
     padding:20px;
-    background:white;
 }
 
-.title h1{
+.header h1{
     color:#003366;
     margin:5px;
+    font-size:48px;
 }
 
-.title h3{
-    color:#666;
+.header h3{
+    color:#006699;
     margin:5px;
 }
 
 .navbar{
     background:#003366;
-    padding:15px;
+    padding:18px;
     text-align:center;
 }
 
@@ -54,38 +58,59 @@ body{
 }
 
 .container{
-    width:90%;
+    width:95%;
     margin:auto;
 }
 
-.welcome{
+.section{
     background:white;
-    margin-top:20px;
+    margin-top:25px;
     padding:25px;
     border-radius:10px;
-    box-shadow:0px 0px 10px lightgray;
+    box-shadow:0 0 10px lightgray;
 }
 
 .cards{
     display:flex;
     gap:20px;
     margin-top:20px;
+    flex-wrap:wrap;
 }
 
 .card{
     flex:1;
-    background:white;
+    min-width:250px;
     padding:20px;
     border-radius:10px;
-    box-shadow:0px 0px 10px lightgray;
     text-align:center;
+    box-shadow:0 0 10px lightgray;
+}
+
+.faculty{
+    background:#d6eaf8;
+}
+
+.research{
+    background:#d5f5e3;
+}
+
+.infrastructure{
+    background:#fcf3cf;
+}
+
+.video-section{
+    background:white;
+    margin-top:25px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px lightgray;
 }
 
 .footer{
     background:#003366;
     color:white;
     text-align:center;
-    padding:15px;
+    padding:20px;
     margin-top:30px;
 }
 
@@ -95,64 +120,118 @@ body{
 
 <body>
 
-<img src="rgpv.jpg" class="header-image">
+<!-- Banner -->
 
-<div class="title">
+<img src="rgpv.jpg" class="banner">
+
+<!-- Header -->
+
+<div class="header">
+
 <h1>Mechanical Engineering Department</h1>
-<h3>University Institute of Technology, RGPV Bhopal</h3>
+
+<h3>
+University Institute of Technology, RGPV Bhopal
+</h3>
+
 </div>
 
+<!-- Navigation -->
+
 <div class="navbar">
+
 <a href="index.html">Home</a>
+
 <a href="faculty.html">Faculty</a>
+
 <a href="students.html">Students</a>
+
 <a href="research.html">Research</a>
+
 <a href="infrastructure.html">Infrastructure</a>
+
 <a href="noticeboard.html">News & Notices</a>
+
 </div>
 
 <div class="container">
 
-<div class="welcome">
-<h2>Welcome</h2>
+<!-- Welcome -->
+
+<div class="section">
+
+<h2>Welcome to Mechanical Engineering Department</h2>
 
 <p>
-Welcome to the Department of Mechanical Engineering.
-The department is committed to excellence in teaching,
-research, innovation and industry collaboration.
+The Department of Mechanical Engineering is committed
+to excellence in teaching, research, innovation and
+industry collaboration.
 </p>
 
 <p>
 The department offers modern laboratories,
-experienced faculty and excellent opportunities
+experienced faculty members and excellent opportunities
 for students to develop technical and professional skills.
 </p>
 
 </div>
 
+<!-- Cards -->
+
 <div class="cards">
 
-<div class="card">
+<div class="card faculty">
 <h2>Faculty</h2>
-<p>Experienced and dedicated faculty members.</p>
+<p>
+Experienced and highly qualified faculty members.
+</p>
 </div>
 
-<div class="card">
+<div class="card research">
 <h2>Research</h2>
-<p>Research projects, patents and publications.</p>
+<p>
+Research projects, publications and innovation.
+</p>
 </div>
 
-<div class="card">
+<div class="card infrastructure">
 <h2>Infrastructure</h2>
-<p>Modern laboratories and workshop facilities.</p>
+<p>
+Modern laboratories, workshop and facilities.
+</p>
 </div>
 
 </div>
 
+<!-- YouTube Video -->
+
+<div class="video-section">
+
+<h2 align="center">
+Department Video
+</h2>
+
+<iframe
+width="100%"
+height="500"
+src="https://www.youtube.com/embed/BrWyo_vhGww"
+title="Mechanical Engineering Department"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
 </div>
+
+</div>
+
+<!-- Footer -->
 
 <div class="footer">
-© Mechanical Engineering Department | UIT RGPV Bhopal
+
+© Mechanical Engineering Department |
+University Institute of Technology |
+RGPV Bhopal
+
 </div>
 
 </body>
